@@ -5,10 +5,10 @@ function richee_import_files() {
     [
       'import_file_name'           => 'Demo Richee',
       'categories'                 => [ 'Category 1'],
-      'import_file_url'            => 'https://spoilt-creeks.000webhostapp.com/demo/richee-content.xml',
-      'import_widget_file_url'     => 'https://spoilt-creeks.000webhostapp.com/demo/richee-widget.wie',
-      'import_customizer_file_url' => 'https://spoilt-creeks.000webhostapp.com/demo/richee-customizer.dat',
-      //'import_preview_image_url'   => get_template_directory_uri().'/screenshot.png',
+      'import_file_url'            => 'https://raw.githubusercontent.com/mahin-ahmed1/richee-demo/main/richee-content.xml',
+      'import_widget_file_url'     => 'https://raw.githubusercontent.com/mahin-ahmed1/richee-demo/main/richee-widget.wie',
+      'import_customizer_file_url' => 'https://raw.githubusercontent.com/mahin-ahmed1/richee-demo/main/richee-customizer.dat',
+      'import_preview_image_url'   => get_template_directory_uri().'/screenshot.png',
       'preview_url'                => 'https://personal-portfoli0.netlify.app',
     ],
    
