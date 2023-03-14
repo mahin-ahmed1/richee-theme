@@ -107,10 +107,10 @@ add_action( 'after_setup_theme', 'richee_setup' );
 function richee_enqueue_scripts() {
 
 	wp_enqueue_style( 'richee-bootstrap', get_template_directory_uri().'/assets/css/bootstrap.min.css', array());
+	
+	wp_enqueue_style( 'richee-fontawesome', get_template_directory_uri().'/assets/css/all.min.css', array());
 
 	if('front-page-template.php' == basename(get_page_template())){
-
-		wp_enqueue_style( 'richee-fontawesome', get_template_directory_uri().'/assets/css/all.min.css', array());
 
 		wp_enqueue_style( 'richee-progress-bar', get_template_directory_uri().'/assets/css/progress-bar.css', array());
 
@@ -180,4 +180,35 @@ function richee_head_css(){
 }
 add_action('wp_head','richee_head_css');
 
+
+function richee_the_posts_navigation() {
+		the_posts_pagination(
+			array(
+				'mid_size'           => 5,
+				'prev_text'          => sprintf(
+					'%s <span class="nav-prev-text">%s</span>','<i class="fa-solid fa-arrow-left"></i>',
+					wp_kses(
+						__( 'Newer <span class="nav-short">posts</span>', 'richee' ),
+						array(
+							'span' => array(
+								'class' => array(),
+							),
+						)
+					)
+				),
+				'next_text'          => sprintf(
+					'<span class="nav-next-text">%s</span> %s',
+					wp_kses(
+						__( 'Older <span class="nav-short">posts</span>', 'richee' ),
+						array(
+							'span' => array(
+								'class' => array(),
+							),
+						)
+					),
+					'<i class="fa-solid fa-arrow-right"></i>',
+				),
+			)
+		);
+	}
 
