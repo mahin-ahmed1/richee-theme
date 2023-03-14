@@ -1,12 +1,16 @@
 jQuery(document).ready(function($){
 
 
-
-  //PROGRESS-BAR PLUGIN RUN
-  $(".progress-bar").ProgressBar(); 
+if ( typeof ProgressBar == 'function' ) { 
+      
+      //PROGRESS-BAR PLUGIN RUN
+     $(".progress-bar").ProgressBar(); 
+}
   
+  
+if ( typeof circlechart == 'function') {
 
-//PROGRESS CIRCLE WITH SCROLLING EFFECTS
+  //PROGRESS CIRCLE WITH SCROLLING EFFECTS
 
  $(window).on('scroll',function(){
         if($(window).scrollTop()>=600){
@@ -15,11 +19,72 @@ jQuery(document).ready(function($){
    }
    });
 
-//ONE PAGE PLUGIN RUN
+}
+
+
+if ( typeof onePgaeNav == 'function') {
+  
+  //ONE PAGE PLUGIN RUN
  $('.header-area .menu-item-type-custom .nav-link').onePgaeNav({
   wrapper: '.navbar-nav',
   speed: 400,
  });
+}
+
+
+if ( typeof owlCarousel == 'function') {
+
+  //OWL CAROUSEL FOR TESTIMONIALS
+
+ $(".owl-carousel").owlCarousel({
+
+    autoplay:true,
+    autoplayTimeout:4000,
+    nav:true,
+    items:3,
+     responsiveClass:true,
+          responsive:{
+              // breakpoint from 0 up
+              0:{
+                  items:1,
+                  nav:false,
+                  dots:true
+              },
+              580:{
+                items:1,
+                nav:true,
+                dots:false,
+              },
+              // breakpoint from 768 up
+              768:{
+                  items:2,
+                  nav:true,
+                  dots:false,
+              },
+              // breakpoint from 1000 up
+              1000:{
+                  items:3,
+                  nav:true,
+                  dots:false,
+              }
+          }
+ });
+
+}
+
+
+if ( typeof autofilter == 'function' ) {
+
+  //Auto filter plugin initialize
+
+ $.autofilter({
+
+  // duration in ms
+  duration: 400
+  
+});
+ 
+}
 
 
 //STICKY NAV WITH SCROLLING EFFECTS
@@ -59,45 +124,7 @@ $( window ).resize(function() {
       $('.nav-bar-area').removeAttr('style');
      }
 });
-
-
-
- //OWL CAROUSEL FOR TESTIMONIALS
-
- $(".owl-carousel").owlCarousel({
-
-    autoplay:true,
-    autoplayTimeout:4000,
-    nav:true,
-    items:3,
-     responsiveClass:true,
-          responsive:{
-              // breakpoint from 0 up
-              0:{
-                  items:1,
-                  nav:false,
-                  dots:true
-              },
-              580:{
-                items:1,
-                nav:true,
-                dots:false,
-              },
-              // breakpoint from 768 up
-              768:{
-                  items:2,
-                  nav:true,
-                  dots:false,
-              },
-              // breakpoint from 1000 up
-              1000:{
-                  items:3,
-                  nav:true,
-                  dots:false,
-              }
-          }
- });
-
+ 
 
 
 //menu item active class
@@ -107,14 +134,7 @@ $( window ).resize(function() {
 });
 
 
-//Auto filter plugin initialize
 
- $.autofilter({
-
-  // duration in ms
-  duration: 400
-  
-});
 
  //portfolio button active class
 
