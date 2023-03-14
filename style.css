@@ -64,11 +64,13 @@ body{
 }
 
 .wp-block-search__button {
-	min-width: 30%;
+    min-width: 30%;
     height: 44px;
     margin-top: 33px;
-    background: #15f000;
-    color: #ffff;
+    background: #15f00000;
+    color: #787676;
+    border-radius: 4px;
+    border: 2px solid #bfbcbc;
 }
 
 .wp-block-latest-posts__list li a{
