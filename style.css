@@ -165,7 +165,7 @@ body{
 
 /* Sticky Post */
 
-.sticky{
+main .sticky{
 	position: inherit !important;
 	box-shadow: none;
 }
