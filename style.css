@@ -159,5 +159,6 @@ body{
 }
 :focus {
     outline: none;
-    box-shadow: 0 0 5px #fff, 0 0 10px red;
+    background: #00de00;
+    color: white !important;
 }
