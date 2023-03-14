@@ -162,3 +162,16 @@ body{
     background: #00de00;
     color: white !important;
 }
+
+/* Sticky Post */
+
+.sticky{
+	position: inherit !important;
+	box-shadow: none;
+}
+
+html,
+body{
+	width: 100%;
+	overflow-x: hidden;
+}
