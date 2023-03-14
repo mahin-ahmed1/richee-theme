@@ -34,7 +34,7 @@
 
 	<div class="entry-content">
 		<?php
-		the_content(
+		the_excerpt(
 			sprintf(
 				wp_kses(
 					/* translators: %s: Post title. Only visible to screen readers. */
