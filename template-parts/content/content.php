@@ -21,7 +21,7 @@
 				<span><?php echo get_the_author();?> |</span>
 				<?php $richee_post_cats=get_the_category();
 				foreach($richee_post_cats as $richee_cat){
-					echo '<span>'.$richee_cat->name.'</span>';
+					echo '<span>'.$richee_cat->name.', </span>';
 				}
 				?> 
 			</div>
