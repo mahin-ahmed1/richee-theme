@@ -163,6 +163,11 @@ body{
     color: white !important;
 }
 
+article img{
+	width:100%
+}
+	
+
 /* Sticky Post */
 
 main .sticky{
