@@ -134,6 +134,16 @@ $( window ).resize(function() {
 });
 
 
+// Submenu show on hover
+
+$('.nav-item-has-children').hover(function(){
+  $(this).find('.sub-menu').first().show();
+},function(){
+  $(this).find('.sub-menu').first().hide();
+});
+
+$('.nav-item-has-children').find('.nav-item-has-children').find('.sub-menu').css({'left':'-108%','top':'5px'});
+
 
 
  //portfolio button active class
