@@ -137,6 +137,33 @@ a{
 }
 
 
+/*Submenu Design */
+
+.nav-item-has-children ul{
+	padding: 5px 0 6px 10px;
+	position: absolute;
+  width: 150px;
+  top: 42px;
+  left: 17px;
+  right: 0;
+  background: white;
+  margin: 0;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 1px 0px 1px;
+  display: none;
+  transition: .3s;
+
+}
+.nav-item-has-children ul li a {
+	margin: 0;
+}
+ul .nav-item-has-children{
+	position: relative;
+}
+.nav-item-has-children ul li{
+	display: block;
+}
+
+
 .menu-btn{
 	text-align: right;
 	display: none;
