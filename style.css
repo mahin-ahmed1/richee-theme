@@ -164,8 +164,24 @@ body{
 }
 
 article img{
-	width:100%;
+	width:auto;
+	max-width:100%;
 	height:auto;
+}
+
+.no-results{
+	text-align: center;
+}
+
+.no-results .search-form input{
+	    padding: 8px 20px;
+    border: 2px solid #11f211;
+
+}
+
+.post-password-form input{
+		padding: 0 10px;
+    border: 2px solid #53ff00;
 }
 	
 
